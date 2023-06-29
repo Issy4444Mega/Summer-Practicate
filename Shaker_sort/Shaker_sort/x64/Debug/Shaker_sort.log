@@ -1,0 +1,3 @@
+﻿  Shaker_sort.cpp
+D:\Laboratorny\Summer_Practicate\Shaker_sort\Shaker_sort\Shaker_sort.cpp(40,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Shaker_sort.vcxproj -> D:\Laboratorny\Summer_Practicate\Shaker_sort\x64\Debug\Shaker_sort.exe
