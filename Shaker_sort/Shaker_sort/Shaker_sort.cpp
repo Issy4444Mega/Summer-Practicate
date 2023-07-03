@@ -32,11 +32,6 @@ int main()
     shaker_sort(mas, 0, (size - 1)); //вызов функции сортировки
     time_t stop = clock(); //время после сортировки
     double time = (stop - start) / 1000.0; //время сортировки
-
-    /*for (int i = 0; i < size; i++) // генерация чисел 
-    {
-        cout << mas[i] << " ";
-    }*/
     
     zapis_after(mas, size);
     cout << endl << "Время выполнения сортировки – " << time << " секунд " << endl;
