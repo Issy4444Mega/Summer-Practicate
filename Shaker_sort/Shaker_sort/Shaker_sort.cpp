@@ -1,6 +1,5 @@
 ﻿#include "h.h"
 
-
 int main()
 {
     setlocale(LC_ALL, "Russian"); //русификация
@@ -26,15 +25,9 @@ int main()
     {
         mas[i] = (rand() % 2001) - 1000;
     }
-    //
-    //здесь запись в файл
+    zapis_before(mas, size);
     
-    /*for (int i = 0; i < size; i++) // генерация чисел 
-    {
-        cout << mas[i]<<" ";
-    }
-    cout << endl;
-    */
+    //
     time_t start = clock(); //время до сортировки
     shaker_sort(mas, 0, (size - 1)); //вызов функции сортировки
     time_t stop = clock(); //время после сортировки
@@ -45,6 +38,7 @@ int main()
         cout << mas[i] << " ";
     }*/
     
+    zapis_after(mas, size);
     cout << endl << "Время выполнения сортировки – " << time << " секунд " << endl;
 
     getchar(); getchar();
